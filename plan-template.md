@@ -1,7 +1,12 @@
 # Project Plan (Template)
 
 ## Overview
-Rebuilding **[PROJECT_NAME]** according to the PRD. We are focused on **[PRIMARY_GOAL / OUTCOME]**.
+This file is a *format/template* for a Ralph `plan.md`.
+
+It is not a suggested task list. Do not copy the example task contents verbatim. Replace the placeholders with your project-specific tasks.
+
+Project: **[PROJECT_NAME]**
+Goal: **[PRIMARY_GOAL / OUTCOME]**
 
 **Reference:**  
 `specs/[PRD_FILE].md`
@@ -13,64 +18,42 @@ Rebuilding **[PROJECT_NAME]** according to the PRD. We are focused on **[PRIMARY
 
 ## Task List
 
+Rules:
+- The task list must be valid JSON (no trailing commas, no comments).
+- Keep the overall shape: an array of objects with `category`, `description`, `steps`, `passes`.
+- `passes` starts as `false` and is flipped to `true` only when the task is complete.
+
 ```json
 [
   {
-    "category": "setup",
-    "description": "[SETUP_TASK_DESCRIPTION]",
+    "category": "[CATEGORY]",
+    "description": "[TASK_DESCRIPTION]",
     "steps": [
-      "[SETUP_STEP_1]",
-      "[SETUP_STEP_2]",
-      "[SETUP_STEP_3]"
+      "[STEP_1]",
+      "[STEP_2]",
+      "[STEP_3]"
     ],
     "passes": false
   },
   {
-    "category": "feature",
-    "description": "[FEATURE_1_DESCRIPTION]",
+    "category": "[CATEGORY]",
+    "description": "[TASK_DESCRIPTION]",
     "steps": [
-      "[FEATURE_1_STEP_1]",
-      "[FEATURE_1_STEP_2]",
-      "[FEATURE_1_STEP_3]",
-      "[FEATURE_1_STEP_4]",
-      "[FEATURE_1_STEP_5]"
+      "[STEP_1]",
+      "[STEP_2]"
     ],
     "passes": false
   },
   {
-    "category": "feature",
-    "description": "[FEATURE_2_DESCRIPTION]",
+    "category": "[CATEGORY]",
+    "description": "[TASK_DESCRIPTION]",
     "steps": [
-      "[FEATURE_2_STEP_1]",
-      "[FEATURE_2_STEP_2]",
-      "[FEATURE_2_STEP_3]",
-      "[FEATURE_2_STEP_4]"
-    ],
-    "passes": false
-  },
-  {
-    "category": "feature",
-    "description": "[FINAL_CTA_DESCRIPTION]",
-    "steps": [
-      "[FINAL_CTA_STEP_1]",
-      "[FINAL_CTA_STEP_2]",
-      "[FINAL_CTA_STEP_3]"
-    ],
-    "passes": false
-  },
-  {
-    "category": "testing",
-    "description": "[TESTING_AND_CLEANUP_DESCRIPTION]",
-    "steps": [
-      "[TEST_STEP_1]",
-      "[TEST_STEP_2]",
-      "[TEST_STEP_3]",
-      "[TEST_STEP_4]"
+      "[STEP_1]"
     ],
     "passes": false
   }
 ]
-````
+```
 
 ---
 
@@ -84,7 +67,7 @@ Rebuilding **[PROJECT_NAME]** according to the PRD. We are focused on **[PRIMARY
 6. Log completion in `activity.md`
 7. Repeat until all tasks pass
 
-**Important:** Only modify the `passes` field. Do not remove or rewrite tasks.
+**Important:** During execution, only modify the `passes` field. Do not remove, reorder, or rewrite tasks while working.
 
 ---
 
