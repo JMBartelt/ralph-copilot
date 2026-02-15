@@ -1,4 +1,4 @@
-# Ralph: Autonomous AI Coding Agent Workflow
+# Ralph for GH Copilot CLI
 
 Ralph is a highly sophisticated, iterative workflow designed for autonomous AI coding agents using the **GitHub Copilot CLI**. It allows you to automate complex, multi-step coding tasks by running them in a continuous loop with fresh context for each iteration.
 
