@@ -1,7 +1,7 @@
 param (
     [Parameter(Mandatory=$true)]
     [int]$iterations,
-    [string]$model = "claude-opus-4.5"
+    [string]$model = "claude-sonnet-4.5"
 )
 
 for ($i = 1; $i -le $iterations; $i++) {
